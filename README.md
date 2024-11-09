@@ -1,17 +1,72 @@
-# alpha_bot - Stock Trading Bot
+# alpha_bot - Automated Stock Trading Bot
+=============================================
 
-## Description
+## Overview
+------------
 
-*alpha_bot* is a Python-based stock trading bot that utilizes the Alice Blue API to automate buying and selling of stocks based on market indicators. The bot analyzes real-time market data, processes custom trading signals, and executes trades to help maximize returns. Users can customize the trading strategy based on different technical indicators.
+alpha_bot is a Python-based stock trading bot that automatically buys and sells stocks by analyzing various technical indicators. It uses the Alice Blue API for real-time trading and is highly customizable for different trading strategies.
 
 ## Features
-- Integration with Alice Blue API for live stock trading
-- Customizable trading indicators
-- Real-time buy/sell decisions based on market analysis
-- Configurable for different trading strategies
+------------
 
-## Installation
+* Real-time market data via Alice Blue API
+* Automated trading based on custom strategies
+* Configurable indicators and trading logic
+* Detailed logging for trade and market data analysis
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/phondani0/alpha_bot.git
+## Getting Started
+-------------------
+
+### Prerequisites
+
+* Python 3.7 or higher
+* An Alice Blue account with API access
+
+### Installation
+
+1. Clone the repository: `git clone https://github.com/phondani0/alpha_bot.git`
+2. Change into the project directory: `cd alpha_bot`
+3. Install dependencies: `pip install -r requirements.txt`
+4. Set up your Alice Blue API credentials in `config.py`
+
+## Configuration
+----------------
+
+* Configure Alice Blue API credentials in `config.py`
+* Customize your trading strategy in `strategy.py` to set indicators and parameters
+* Set logging preferences for trade and market data
+
+## Usage
+---------
+
+Run the bot with `python alpha_bot.py` to start analyzing market data and executing trades based on your strategy.
+
+## Project Structure
+---------------------
+
+* `alpha_bot.py`: Main script to run the bot
+* `config.py`: Configuration file for API credentials and bot settings
+* `strategy.py`: Contains trading strategy logic
+
+## Roadmap
+------------
+
+* Add support for additional indicators
+* Implement risk management features
+* Enhance logging with trade summaries and analytics
+
+## Contributing
+---------------
+
+Contributions are welcome! Submit a pull request with any improvements or new features.
+
+## License
+------------
+
+This project is licensed under the MIT License. See the LICENSE file for details.
+
+## Acknowledgements
+-------------------
+
+* Alice Blue API
+* TA-Lib for technical analysis indicators
